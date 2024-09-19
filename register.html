@@ -4,37 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
-    <script type="module" src="firebaseauth.js"></script>
+    <script type="module" src="register.js"></script>
  <!-- Include SweetAlert CSS and JS -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <title>Log in</title>
+    <title>Register</title>
 
 </head>
 <body>
      <div class="wrapper">
         <div class="container">
-             <div class="left">
+             <!-- <div class="left">
                 <img src="bart.gif" alt="" srcset="">
                  <p>"Listen to music that excites you."</p>
-             </div>
+             </div> -->
              <div class="right">
                       <div class="title">
-                           <p class="main">Welcome Back!</p>
-                           <p class="sub"> Log in to <span style="color: #16a34a;">MusicSaga</span></p>
+                           <p class="main">Create an Account!</p>
+                           <p class="sub"> Sign up to <span style="color: #16a34a;">MusicSaga</span></p>
                       </div>
-                      <div class="form">
+                      <form class="form">
+                        <div class="email">
+                            <input id="name" type="name" name=" name" placeholder="Full Name" id="" autocapitalize="name">
+                      </div>
                             <div class="email">
-                                  <input id="email" type="email" name=" email" placeholder="Email" id="" required>
+                                  <input id="email" type="email" name=" email" placeholder="Email" id="" autocomplete="email" required>
                             </div>
                             <div class="password">
-                                 <input id="password" type="password" name="" id="" placeholder="Password" required>
+                                 <input id="password" type="password" name="" id="" placeholder="Password" autocomplete="new-password" required>
                             </div>
-                            <button id="submit" class="login">Submit</button>
+                            <button id="submit" class="login">Sign up</button>
 
                             <div class="register">
-                                <p>Don't have an account?<span><a href="register.html">Sign in</a></span></p>
-                            </div>
+                                <p>Already have an account?<span><a href="login.html">Log in</a></span></p>
+                            </form>
 
                             <div class="or">
                                      <div class="line"></div>
