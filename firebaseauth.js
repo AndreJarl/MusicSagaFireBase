@@ -65,11 +65,7 @@ import {getFirestore, setDoc, doc} from "https://www.gstatic.com/firebasejs/10.1
         const user = userCredential.user;
         localStorage.setItem('loggedInUserId', user.uid);
 
-         // Clear input fields
-         emailInput.value = '';
-         passwordInput.value = '';
-         nameInput.value = '';
-
+   
         Swal.fire({
             title: "LOGIN SUCCESFUL!",
             width: 700,
