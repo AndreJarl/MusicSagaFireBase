@@ -54,7 +54,7 @@ import {getFirestore, setDoc, doc} from "https://www.gstatic.com/firebasejs/10.1
     }
     else{
 
-        signUp.innerHTML = '<img src="loading.gif" alt="Loading..." style="width: 30px; height: 20px;">';
+        signUp.innerHTML = '<img src="./images/loading.gif" alt="Loading..." style="width: 30px; height: 20px;">';
 
     const auth = getAuth();
     const db = getFirestore();
@@ -85,12 +85,12 @@ import {getFirestore, setDoc, doc} from "https://www.gstatic.com/firebasejs/10.1
             Swal.fire({
               title: "Account created!",
               text: "Welcome to MusicSaga!",
-              imageUrl: "confette.gif", // Ensure this path is correct
+              imageUrl: "./images/confette.gif", // Ensure this path is correct
               imageWidth: 400,
               imageHeight: 200,
               imageAlt: "Custom image",
               didClose: () => {
-                window.location.href = 'login.html'; // Redirect after SweetAlert closes
+                window.location.href = 'index.html'; // Redirect after SweetAlert closes
               }
             });
           })

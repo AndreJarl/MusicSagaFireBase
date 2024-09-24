@@ -42,7 +42,7 @@ import {getFirestore, setDoc, doc} from "https://www.gstatic.com/firebasejs/10.1
      
    
 
-     submitt.innerHTML = '<img src="loading.gif" alt="Loading..." style="width: 20px; height: 10px;">';
+     submitt.innerHTML = '<img src="./images/loading.gif" alt="Loading..." style="width: 20px; height: 10px;">';
 
       if(!email || !password){
         Swal.fire({
@@ -73,7 +73,7 @@ import {getFirestore, setDoc, doc} from "https://www.gstatic.com/firebasejs/10.1
             color: "red",
             confirmButtonColor: '#0ea5e9',
             confirmButtonText: 'Go to MusicSaga',
-            background: "#fff url(twerk-dance.gif)",
+            background: "#fff url(./images/twerk-dance.gif)",
             didClose: () => {
                 window.location.href = './SoftwareD/mp3.html'; // Redirect after SweetAlert closes
             }
